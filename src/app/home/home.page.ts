@@ -1,4 +1,8 @@
+import { ExtratoService } from './../extrato.service';
+import { Routes } from '@angular/router';
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +11,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+
+  constructor(public navCtrl: NavController, private extrato: ExtratoService) {
+
+  }
+
+  navegarPara(){
+    this.navCtrl.navigateForward('consultar-saldo');
+  }
+
+  navegarInformacoes(){
+    this.navCtrl.navigateForward('menu-informacoes');
+  }
+
+  navegarExtrato(){
+    this.navCtrl.navigateForward('extrato');
+  }
 
 }

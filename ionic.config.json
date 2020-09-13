@@ -1,5 +1,7 @@
 {
   "name": "SafraPix",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

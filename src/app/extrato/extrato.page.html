@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title center text-center></ion-title>
+    <img object-fit: cover src="../../assets/imgs/safrapix3.png" style="align-items: center">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-text-center">
+    <ion-card-header>
+      <ion-card-title>EXTRATO DE TRANSAÇÕES E CASHBACK</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <div id="container">
+    <ion-list *ngFor = "let ext of extratos">
+      <ion-item text-wrap button >
+        <ion-avatar slot="start">
+          <img src="https://api.adorable.io/avatars/177/456.png">
+        </ion-avatar>
+        <ion-label>
+        <h5>Tipo de pagamento: {{ext.paymentType}}</h5>
+        <h3>Estabelecimento: {{ext.local}}</h3> 
+        <h3>Data: {{ext.date}}</h3>
+        <h3>Cashback recebido R$: {{ext.cbValue}}</h3>  
+      </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

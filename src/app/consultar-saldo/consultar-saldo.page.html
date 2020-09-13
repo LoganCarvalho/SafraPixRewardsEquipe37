@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title center text-center></ion-title>
+			<img  object-fit: cover src="../../assets/imgs/safrapix3.png"  style="align-items: center" >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="ion-text-center">
+    <ion-card-header>TRANSFERÊNCIA</ion-card-header>
+  </ion-card>
+
+  <ion-card class="ion-text-center">
+    <ion-card-header>Transferir para novo contato</ion-card-header>
+    <ion-icon name="person-add"></ion-icon>
+  </ion-card>
+  
+  <div id="container">
+    <ion-list *ngFor = "let cli of clientes">
+      <ion-item text-wrap button >
+        <ion-avatar slot="start">
+          
+        </ion-avatar>
+        <ion-label>
+        <h3>{{cli.nome}}</h3>  
+        <h5>{{cli.instituicao}}</h5>
+      </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>
