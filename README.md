@@ -35,11 +35,11 @@ zipalign -v 4 app-release-unsigned.apk nomeFinalArquivo.apk (Para otimização d
 
 * **Esdras Vasconcelos** 
 
+* **Janaina Silveira** 
+
 * **André Oliveira** 
 
 * **Victor Dity** 
-
-* **Janaina Silveira** 
 
 ## Licenciamento
 
